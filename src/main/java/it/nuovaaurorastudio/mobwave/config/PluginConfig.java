@@ -14,37 +14,37 @@ import java.util.Map;
 @Names(strategy = NameStrategy.HYPHEN_CASE, modifier = NameModifier.NONE)
 public class PluginConfig extends OkaeriConfig {
 
-    @Comment("Intervallo di controllo per le potenziali ondate (in secondi)")
+    @Comment("Check interval for potential waves (in seconds)")
     private long waveScheduleSeconds = 600;
 
-    @Comment("Raggio dal centro del regno per lo spawn dei mob")
+    @Comment("Range from kingdom center for mob spawning")
     private int rangeFromKingdomCenter = 50;
 
-    @Comment("Ritardo prima dell'inizio della prima ondata (in secondi)")
+    @Comment("Delay before the first wave starts (in seconds)")
     private int delayBeforeFirstWave = 30;
 
-    @Comment("Numero massimo di mob contemporaneamente attivi per ondata")
+    @Comment("Maximum number of concurrent mobs active per wave")
     private int maxConcurrentMobs = 20;
 
-    @Comment("Limite massimo di ondate per regno al giorno")
+    @Comment("Maximum limit of waves per kingdom per day")
     private int wavesPerDayLimit = 3;
 
-    @Comment("Cooldown minimo tra le ondate (in minuti)")
+    @Comment("Minimum cooldown between waves (in minutes)")
     private int minCooldownMinutes = 120;
 
-    @Comment("Percentuale di probabilità di spawn di un'ondata (0-100)")
+    @Comment("Spawn chance percentage for a wave (0-100)")
     private int spawnChance = 50;
 
-    @Comment("Intervallo di spawn tra i mob (in ticks)")
+    @Comment("Spawn interval between mobs (in ticks)")
     private int spawnIntervalTicks = 40;
 
-    @Comment("Timeout massimo per completare un'ondata (in secondi)")
+    @Comment("Maximum timeout to complete a wave (in seconds)")
     private int waveTimeoutSeconds = 600;
 
-    @Comment("Lingua dei messaggi")
-    private String language = "it";
+    @Comment("Message language")
+    private String language = "en";
 
-    @Comment("Definizione delle ondate")
+    @Comment("Wave definitions")
     private Map<String, WaveData> waves = new HashMap<>() {{
         put("wave1", new WaveData(10, 30, new HashMap<>() {{
             put("ZOMBIE", 100);
