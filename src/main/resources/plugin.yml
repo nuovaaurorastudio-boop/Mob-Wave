@@ -1,0 +1,12 @@
+name: MobWave
+version: 1.0.0
+main: it.nuovaaurorastudio.mobwave.MobWave
+api-version: '1.21'
+author: NuovaAuroraStudio
+depend: [Kingdoms]
+softdepend: [MythicMobs]
+description: A plugin to spawn waves of mobs attacking KingdomsX regions.
+commands:
+  mobwave:
+    description: Main command for MobWave
+    aliases: [mw]
