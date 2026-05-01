@@ -64,6 +64,10 @@ waves:
 
 ---
 
+[CENTER]
+[URL='https://discord.gg/dukKzj8xqQ'][IMG]https://img.shields.io/badge/Discord-Join%20Our%20Community-7289da?style=for-the-badge&logo=discord[/IMG][/URL]
+[/CENTER]
+
 ## 🏗 Technical Specifications
 
 * **Minecraft Version:** 1.21.x
